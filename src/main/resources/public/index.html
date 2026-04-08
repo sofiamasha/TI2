@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cadastro de Produto</title>
+
+<style>
+body {
+  background: linear-gradient(135deg, #ff9ecb, #ff69b4);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  color: #ff69b4;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ff1493;
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+<h1>Cadastro 💖</h1>
+
+<form action="/produto" method="post">
+<input name="nome" placeholder="Nome do produto" required>
+<input name="preco" placeholder="Preço" required>
+<button type="submit">Salvar</button>
+</form>
+
+</div>
+</body>
+</html>
